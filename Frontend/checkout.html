@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Checkout — VANA</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+    
+
+    <script
+        defer
+        src="script.js"
+    ></script>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================
+     HEADER / NAVIGATION
+     ========================================= -->
+
+<header class="site-header">
+
+    <div class="container nav">
+
+        <!-- Brand -->
+
+        <a
+            class="brand"
+            href="index.html"
+        >
+            VANA
+
+            <small>
+                Botanical Apothecary
+            </small>
+        </a>
+
+
+        <!-- Navigation -->
+
+        <nav class="navlinks">
+
+            <a href="shop.html">
+                Shop
+            </a>
+
+            <a href="categories.html">
+                Categories
+            </a>
+
+            <a href="ingredients.html">
+                Ingredients
+            </a>
+
+            <a href="about.html">
+                Our Story
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+        </nav>
+
+
+        <!-- Header Actions -->
+
+        <div class="actions">
+
+            <a
+                class="icon-btn"
+                href="account.php"
+            >
+                Account
+            </a>
+
+            <a
+                class="icon-btn"
+                href="cart.html"
+            >
+                Bag (
+                <span data-cart-count>0</span>
+                )
+            </a>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- =========================================
+     MAIN CONTENT
+     ========================================= -->
+
+<main>
+
+
+    <!-- =====================================
+         PAGE TITLE
+         ===================================== -->
+
+    <section class="page-title">
+
+        <div class="container">
+
+            <div class="eyebrow">
+                Secure checkout
+            </div>
+
+            <h1>
+                Complete your order.
+            </h1>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================
+         CHECKOUT SECTION
+         ===================================== -->
+
+    <section class="section">
+
+        <div class="container two-col">
+
+
+            <!-- =================================
+                 CHECKOUT FORM
+                 ================================= -->
+
+            <form
+    class="form"
+    id="checkoutForm"
+>
+
+    <input
+        type="text"
+        name="name"
+        placeholder="Full name"
+        required
+    >
+
+    <input
+        type="email"
+        name="email"
+        placeholder="Email address"
+        required
+    >
+
+    <input
+        type="tel"
+        name="phone"
+        placeholder="Phone number"
+        required
+    >
+
+    <textarea
+        name="address"
+        rows="4"
+        placeholder="Delivery address"
+        required
+    ></textarea>
+
+    <select
+        name="payment"
+        required
+    >
+
+        <option value="">
+            Payment method
+        </option>
+
+        <option value="cod">
+            Cash on delivery
+        </option>
+
+        <option value="upi">
+            UPI
+        </option>
+
+        <option value="card">
+            Card
+        </option>
+
+    </select>
+
+    <button
+        type="submit"
+        class="btn fill"
+    >
+        Place Order
+    </button>
+
+</form>
+
+            <!-- =================================
+                 CHECKOUT INFORMATION
+                 ================================= -->
+
+            <div class="spec-card">
+
+                <h3>
+                    VANA checkout
+                </h3>
+
+                <p>
+                    Complete your details to place
+                    your VANA botanical order.
+                </p>
+
+                <span class="badge">
+                    SSL READY
+                </span>
+
+                <span class="badge">
+                    SECURE FLOW
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- =========================================
+     FOOTER
+     ========================================= -->
+
+<footer class="footer">
+
+    <div class="container footer-grid">
+
+
+        <!-- Footer Brand -->
+
+        <div>
+
+            <div
+                class="brand"
+                style="color: #f5f0e5;"
+            >
+                VANA
+            </div>
+
+            <p>
+                Plant-led Indian beauty,
+                made with respect for skin,
+                soil and tradition.
+            </p>
+
+        </div>
+
+
+        <!-- Explore -->
+
+        <div>
+
+            <h3>
+                Explore
+            </h3>
+
+            <a href="shop.html">
+                Shop all
+            </a>
+
+            <a href="categories.html">
+                Categories
+            </a>
+
+            <a href="ingredients.html">
+                Ingredients
+            </a>
+
+        </div>
+
+
+        <!-- About -->
+
+        <div>
+
+            <h3>
+                About
+            </h3>
+
+            <a href="about.html">
+                Our story
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+           <a href="account.php">
+           Account
+           </a>
+             
+
+        </div>
+
+
+        <!-- Basket -->
+
+        <div>
+
+            <h3>
+                Basket
+            </h3>
+
+            <a href="cart.html">
+                View cart
+            </a>
+
+            <a href="checkout.html">
+                Checkout
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+</body>
+
+</html>

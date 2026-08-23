@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- =========================================
+         BASIC META
+         ========================================= -->
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Shop — VANA</title>
+
+
+    <!-- =========================================
+         STYLESHEET
+         ========================================= -->
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+
+    <!-- =========================================
+         PRODUCT DATA
+         ========================================= -->
+
+    <script src="data.js"></script>
+
+
+    <!-- =========================================
+         MAIN JAVASCRIPT
+         ========================================= -->
+
+    <script defer src="script.js"></script>
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+         HEADER / NAVIGATION
+         ========================================= -->
+
+    <header class="site-header">
+
+        <div class="container nav">
+
+
+            <!-- Brand -->
+
+            <a
+                class="brand"
+                href="index.html"
+            >
+                VANA
+
+                <small>
+                    Botanical Apothecary
+                </small>
+
+            </a>
+
+
+            <!-- Navigation -->
+
+            <nav class="navlinks">
+
+                <a href="shop.html">
+                    Shop
+                </a>
+
+                <a href="categories.html">
+                    Categories
+                </a>
+
+                <a href="ingredients.html">
+                    Ingredients
+                </a>
+
+                <a href="about.html">
+                    Our Story
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </nav>
+
+
+            <!-- Header Actions -->
+
+            <div class="actions">
+
+                <a
+           class="icon-btn"
+            href="account.php"
+              >
+            Account
+            </a>
+                <a
+                    class="icon-btn"
+                    href="cart.html"
+                >
+                    Bag (
+                    <span data-cart-count>0</span>
+                    )
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================================
+         MAIN CONTENT
+         ========================================= -->
+
+    <main>
+
+
+        <!-- =====================================
+             SHOP PAGE TITLE
+             ===================================== -->
+
+        <section class="page-title">
+
+            <div class="container">
+
+                <div class="eyebrow">
+                    The Apothecary
+                </div>
+
+                <h1>
+                    Shop botanical formulas.
+                </h1>
+
+                <p class="muted">
+                    Face, hair, body and beauty rituals
+                    rooted in Indian botanicals.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             SHOP SECTION
+             ===================================== -->
+
+        <section class="section">
+
+            <div class="container">
+
+
+                <!-- =================================
+                     FILTERS
+                     ================================= -->
+
+                <div class="filters">
+
+
+                    <!-- Search -->
+
+                    <input
+                        id="search"
+                        type="search"
+                        placeholder="Search formulas…"
+                    >
+
+
+                    <!-- Category Filter -->
+
+                    <select id="category">
+
+                        <option value="">
+                            All categories
+                        </option>
+
+                        <option value="Face Care">
+                            Face Care
+                        </option>
+
+                        <option value="Hair Care">
+                            Hair Care
+                        </option>
+
+                        <option value="Body Care">
+                            Body Care
+                        </option>
+
+                        <option value="Beauty">
+                            Beauty
+                        </option>
+
+                    </select>
+
+
+                    <!-- Price Sorting -->
+
+                    <select id="sort">
+
+                        <option value="">
+                            Featured
+                        </option>
+
+                        <option value="low">
+                            Price: low to high
+                        </option>
+
+                        <option value="high">
+                            Price: high to low
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- =================================
+                     PRODUCT GRID
+                     ================================= -->
+
+                <!--
+                    Products are currently generated
+                    by script.js using data.js.
+
+                    Later, PHP + MySQL can be used
+                    to load products from the database.
+                -->
+
+                <div
+                    class="products"
+                    data-shop
+                ></div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================================
+         FOOTER
+         ========================================= -->
+
+    <footer class="footer">
+
+        <div class="container footer-grid">
+
+
+            <!-- =====================================
+                 FOOTER BRAND
+                 ===================================== -->
+
+            <div>
+
+                <div
+                    class="brand"
+                    style="color: #f5f0e5;"
+                >
+                    VANA
+                </div>
+
+                <p>
+                    Plant-led Indian beauty,
+                    made with respect for skin,
+                    soil and tradition.
+                </p>
+
+            </div>
+
+
+            <!-- =====================================
+                 EXPLORE
+                 ===================================== -->
+
+            <div>
+
+                <h3>
+                    Explore
+                </h3>
+
+                <a href="shop.html">
+                    Shop all
+                </a>
+
+                <a href="categories.html">
+                    Categories
+                </a>
+
+                <a href="ingredients.html">
+                    Ingredients
+                </a>
+
+            </div>
+
+
+            <!-- =====================================
+                 ABOUT
+                 ===================================== -->
+
+            <div>
+
+                <h3>
+                    About
+                </h3>
+
+                <a href="about.html">
+                    Our story
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+                <a href="account.php">
+                 Account
+                </a>
+            </div>
+
+
+            <!-- =====================================
+                 BASKET
+                 ===================================== -->
+
+            <div>
+
+                <h3>
+                    Basket
+                </h3>
+
+                <a href="cart.html">
+                    View cart
+                </a>
+
+                <a href="checkout.html">
+                    Checkout
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>
